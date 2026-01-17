@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My E-Commerce Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Hostname Identifier -->
+    <div id="hostname-banner">
+        Server Hostname: <span id="display-hostname">Loading...</span>
+    </div>
+
+    <!-- Header and Navigation -->
+    <header>
+        <h1>Awesome Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="view-cart">View Cart</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main id="products">
+        <h2>Featured Products</h2>
+        <!-- Product Grid will be populated by JavaScript -->
+        <div class="product-grid" id="product-grid">
+            <!-- Example Product Card (template) -->
+            <!-- <div class="product-card">
+                <img src="placeholder.jpg" alt="Product Name">
+                <h3>Product Name</h3>
+                <p>$19.99</p>
+                <button onclick="addToCart({id: 1, name: 'Product Name', price: 19.99})">Add to Cart</button>
+            </div> -->
+        </div>
+    </main>
+
+    <!-- Cart Sidebar -->
+    <aside id="cart-sidebar" class="hidden">
+        <h2>Your Cart</h2>
+        <ul id="cart-items">
+            <!-- Cart items will be populated by JavaScript -->
+        </ul>
+        <p>Total: $<span id="cart-total">0.00</span></p>
+        <button id="close-cart">Close Cart</button>
+        <button>Checkout (Backend needed)</button>
+    </aside>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Awesome Store</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
